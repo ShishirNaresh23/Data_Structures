@@ -11,6 +11,20 @@ How to print numbers 1 to N using recursion programming method.  For example,
 3
 4
 5
+
+How to print numbers N to 1 using recursion programming method.  For example,
+
+>>> printNumNto1(5)
+5
+4
+3
+2
+1
+
+Print sum of N natural number. For example,
+
+>>> sumNaturalNum(4)
+10
 """
 
 
@@ -56,3 +70,20 @@ def printNum1toN(n: int, k: int = 1):
 
     print(k)
     printNum1toN(n - 1, k + 1)
+
+
+def sumNaturalNum(n: int, s: int = 0) -> int:
+    """
+    :param n: @Required variable how many natural numbers sum needs to be calculated.
+    :param s: initialized with zero, so it can be called in all recursive call.
+    :return: Sum of n natural numbers
+
+    eg: >>> sumNaturalNum(4)
+        10
+    """
+    # Base condition
+    if n == 0: return s
+
+    return sumNaturalNum(n-1, s+n)
+
+
