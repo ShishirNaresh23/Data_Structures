@@ -23,6 +23,9 @@ def printNumNto1(n: int) -> int:
         2
         1
     """
+    if not n >= 0:
+        raise ValueError("n must be >= 0")
+
     # Base case
     if n == 0: return
 
@@ -45,6 +48,9 @@ def printNum1toN(n: int, k: int = 1):
         6
         7
     """
+    if not n >= 0:
+        raise ValueError("n must be >= 0")
+
     # Base case
     if n == 0: return
 
