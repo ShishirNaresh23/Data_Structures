@@ -23,6 +23,3 @@ def subsetsOfSum(arr: list, s: int, num: int) -> int:
         return 1 if (s == 0) else 0
 
     return subsetsOfSum(arr, s, num - 1) + subsetsOfSum(arr, s - arr[num - 1], num - 1)
-
-
-print(subsetsOfSum([10, 5, 2, 3, 6], 8, 5))
