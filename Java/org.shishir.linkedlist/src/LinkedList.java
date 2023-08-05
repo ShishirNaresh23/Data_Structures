@@ -78,7 +78,7 @@ public class LinkedList {
                 else {
                     previousNode.next = currNode.next;
                 }
-                return currNode.toString();
+                return "Node has been deleted with data : " + Integer.toString(data);
             } else {
                 previousNode = currNode;
                 currNode = currNode.next;

@@ -7,6 +7,7 @@ public class Main {
         }
         System.out.println(linkedlist.findElement(3).toString());
         System.out.println(linkedlist.removeElement(2));
+        System.out.println(linkedlist.head.toString());
         System.out.println("Hello world!");
     }
 }
